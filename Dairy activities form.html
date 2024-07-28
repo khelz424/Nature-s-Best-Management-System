@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+       
+    </head>
+    <body>
+        <h1>Dairy daily activities</h1>
+<form>
+<div class="form-group">
+    <Label>Tag Number</Label>
+    <input type="char" name="tagnumber">
+<!--first he will input the number and then it can be a drop down list.depends on how 
+  we will go about it. -->
+    <Label>Date Of Birth</Label>
+    <input type="date" name="dateofbirth">
+    </div>
+    <!--Date of birth should be removed after the intiaL input. -->
+    <div class="form-group">
+
+    <label>Gender</label>
+    <select name="gender">
+        <option value="gender1">Male</option>
+        <option value="gender2">Female</option>
+    </select> 
+</div>
+<div class="form-group">
+    <label>Feed</label>
+    <select name="feed">
+        <option value="feed1">Fed</option>
+        <option value="feed2">Not Fed</option>
+    </select> 
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <select name="status">
+            <option value="status1">Milking</option>
+            <option value="status2">Dry</option>
+            <option value="status3">Pregnant</option>
+            <option value="status4">Sold</option>
+            <option value="status4">Not Sold</option>
+            <!--Depending on the gender chosen... if female everything in the option value
+            should be there. if male: sold and not sold should appear as options -->
+        </select> 
+        </div>
+        <!--If Milking is chosen the time of day,total litres and customer boxes should 
+        appear for milk sales. she wants the input to be on one page,which will automatically calculate
+        the total revenue -->
+        <!--If sold is chosen the selling price box for cattle sales should be present-->
+        <h2>Milking Per Cow</h2>
+        <div class="form-group">
+            <Label>Time Of Day</Label>
+            <select name="timeofday">
+                <option value="c1">Morning</option>
+                <option value="c2">Afternoon</option>
+             
+            </select> 
+            
+           </div>
+           <div class="form-group">
+            <Label>Total Litres</Label>
+            <input type="number" name="litres" >
+        </div>
+        <div class="form-group">
+            <Label>Customer</Label>
+            <select name="customer">
+                <option value="c1">Bvumbwe</option>
+                <option value="c2">Mustard</option>
+             
+            </select> 
+           </div>
+
+           <h2>Cattle Sales</h2>
+<div class="form-group">
+    <Label>Selling Price</Label>
+    <input type="text" name="sellingprice" >
+</div>
+<!--Assumption: the tag number they add at the top will be
+the same one being sold. -->
+        <button type="submit">Submit</button>
+</form>
+</body>
+</html>
