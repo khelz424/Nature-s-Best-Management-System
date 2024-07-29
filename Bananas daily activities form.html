@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+       
+    </head>
+    <body>
+        <h1>Bananas daily activities</h1>
+<form>
+<div class="form-group">
+    <Label>Plot Number</Label>
+    <select name="plotnumber">
+        <option value="plot12">Plot 1 and 2</option>
+        <option value="plot34">Plot 3 and 4</option>
+        <option value="plot56">Plot 5 and 6</option>
+        <option value="plot78">Plot 7 and 8</option>
+        <option value="plot9">Plot 9</option>
+    </select> 
+    </div>
+    <div class="form-group">
+        <h2>Was water applied?</h2>
+        Yes <input type="radio" name="water" value="Yes">
+        No <input type="radio" name="water" value="No">
+        <!--assumption: each plot has a fixed amount. if they click yes on the radio button the fixed number
+        of litres is added in the column for the plot selected under water applied.  -->
+    </div>
+    <div class="form-group">
+        <h2>Chemicals applied</h2>
+        <select name="plotnumber">
+            <option value="c1">Sypermethrin</option>
+            <option value="c2">Chemozeb</option>
+            <option value="c3">Abameetin</option>
+            <option value="plot78">All</option>
+        </select> 
+<!--assumption: each one has a fixed amount. they click on the radio button where they have applied/all 
+of them and automatically generates a column of the different chemicals with their values -->
+    </div>
+    <div class="form-group">
+        <h2>Weeding</h2>
+        <Label>Number Of Days</Label>
+        <input type="number" name="numberofdays">
+        <label>Number Of People</label>
+        <input type="text" name="numberofpeople">
+        </div>
+        <div class="form-group">
+            <h2>Manure applied</h2>
+            <select name="manure">
+                <option value="m1">Chicken</option>
+                <option value="m2">Cattle</option>
+                <option value="m3">All</option>
+                
+            </select> 
+            
+            <!--assumption: each one has a fixed amount of 1kg. they click on
+            the radio button where they have applied manure or the all and automatically generates a column of 
+            the manure with their values.-->
+    </form>
+    </body>
+    </html>
+<!--first he will input the number and then it can be a drop down list.depends on how 
+  we will go about it. -->
