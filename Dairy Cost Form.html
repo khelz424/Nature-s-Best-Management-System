@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+       
+    </head>
+    <body>
+        <h1>Dairy Cost Form</h1>
+<form>
+<div class="form-group">
+    <Label>Feed</Label>
+    <select name="feedcost">
+        <option value="fd1">Madeya</option>
+        <option value="fd2">Soya Cake</option>
+        <option value="fd3">Salt</option>
+        <option value="fd4">Minerals</option>
+        <option value="fd5">DCP</option>
+        <option value="fd6">Lime</option>
+        <option value="fd7">Milk Booster</option>
+        <option value="fd8">Calcium</option>
+        <option value="fd9">Green grass</option>
+        <option value="fd10">Maize Stocks</option>
+        <option value="fd11">Molasses</option>
+
+    </select> 
+    <!--Should be able to choose an option and place their amounts for each one which
+            will submit at once. -->
+    <label>Total Cost</label>
+    <input type="text" name="totalcost">
+    <label>Total Kgs</label>
+    <input type="text" name="totalkgs">
+    </div>
+    <br>
+    <div class="form-group">
+        <Label>Medicine</Label>
+        <select name="medcost">
+            <option value="mdcost">Vitamins</option>
+            <option value="mdcost">Deworming</option>
+            <option value="mdcost">Dip</option>
+            <option value="mdcost">Antibiotics</option>
+            </select>
+            <!--Should be able to choose an option and place their amounts for each one which
+            will submit at once. -->
+            <label>Total Cost</label>
+            <input type="text" name="totalcost">
+            <label>Total Mls</label>
+            <input type="text" name="totalkgs">
+            </div>
+   <br>
+    <div class="form-group">
+        <h2>Labour</h2>
+        <label for="employeesdairy">3 Employees</label>
+          <input type="checkbox" id="empdairy" name="empdairy" value="empdairy" />
+        
+            </div>
+            <br>
+            <div class="form-group">
+                <h2>Management</h2>
+                <label for="mandairy">1 Employee</label>
+                  <input type="checkbox" id="mandairy" name="mandairy" value="mandairy" />
+                
+                    </div>
+                   
+           <br>
+            <button type="submit">Submit</button>
+    </form>
+    </body>
+    </html>
